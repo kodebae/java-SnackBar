@@ -4,18 +4,14 @@ public class Customer {
     private static int maxId = 0;
     private int customerId;
     private String fname;
-    private String snacks;
-    private String sodas;
     private double pocketChange;
 
     // Constructor
-    public Customer(String fname, String snacks, String sodas, double pocketChange) {
+    public Customer(String fname, double pocketChange) {
 
         maxId++;
         customerId = maxId;
         this.fname = fname;
-        this.snacks = snacks;
-        this.sodas = sodas;
         this.pocketChange = pocketChange;
     } //close constructor
 
@@ -27,12 +23,6 @@ public class Customer {
         public String getFname() {
             return fname;
         }
-        public String getSnacks() {
-            return snacks;
-        }
-        public String getSodas() {
-            return sodas;
-        }
         public double getPocketChange() {
             return pocketChange;
         } // last Getter
@@ -40,12 +30,6 @@ public class Customer {
         // Setters 
         public void setFname(String fname) {
             this.fname = fname;
-        }
-        public void  setSnacks(String snacks) {
-            this.snacks = snacks;
-        }
-        public void setSodas(String sodas) {
-            this.sodas = sodas;
         }
         public void setPocketChange(double pocketChange) {
             this.pocketChange = pocketChange; 

@@ -7,7 +7,7 @@ public class VendingMachine {
 
 
     // Consturctor
-    public VendingMachine(int vMId, String vName){
+    public VendingMachine(String vName){
         maxId++;
         this.vMId = maxId;
         this.vName = vName;
