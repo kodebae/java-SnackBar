@@ -6,10 +6,10 @@ public class Customer {
     private String fname;
     private String snacks;
     private String sodas;
-    private int pocketChange;
+    private double pocketChange;
 
     // Constructor
-    public Customer(String fname, String snacks, String sodas, int pocketChange) {
+    public Customer(String fname, String snacks, String sodas, double pocketChange) {
 
         maxId++;
         customerId = maxId;
@@ -17,37 +17,38 @@ public class Customer {
         this.snacks = snacks;
         this.sodas = sodas;
         this.pocketChange = pocketChange;
-    }
+    } //close constructor
 
 
-    // Getters
-    public int getCustomerId() {
-        return customerId;
-    }
-    public String getFname() {
-        return fname;
-    }
-    public String getSnacks() {
-        return snacks;
-    }
-    public String getSodas() {
-        return sodas;
-    }
-    public int getPocketChange() {
-        return pocketChange;
-    }
+        // Getters
+        public int getCustomerId() {
+            return customerId;
+        }
+        public String getFname() {
+            return fname;
+        }
+        public String getSnacks() {
+            return snacks;
+        }
+        public String getSodas() {
+            return sodas;
+        }
+        public double getPocketChange() {
+            return pocketChange;
+        } // last Getter
 
-    // Setters 
-    public void setFname(String fname) {
-        this.fname = fname;
-    }
-    public void  setSnacks(String snacks) {
-        this.snacks = snacks;
-    }
-    public void setSodas(String sodas) {
-        this.sodas = sodas;
-    }
-    public void setPocketChange(int pocketChange) {
-        this.pocketChange = pocketChange; 
-    }
-}
+        // Setters 
+        public void setFname(String fname) {
+            this.fname = fname;
+        }
+        public void  setSnacks(String snacks) {
+            this.snacks = snacks;
+        }
+        public void setSodas(String sodas) {
+            this.sodas = sodas;
+        }
+        public void setPocketChange(double pocketChange) {
+            this.pocketChange = pocketChange; 
+        }// last Settter
+
+} // closes Customer class
