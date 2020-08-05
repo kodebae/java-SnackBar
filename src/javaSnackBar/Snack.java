@@ -5,11 +5,11 @@ public class Snack {
     private int snackId;
     private String snackName;
     private int snackQuantity;
-    private int snackCost;
+    private double snackCost;
     private int vMId;
 
     //Constructor 
-    public Snack(String snackName, int snackQuantity, int snackCost, int vMId) {
+    public Snack(String snackName, int snackQuantity, double snackCost, int vMId) {
         maxId++;
         snackId = maxId;
         this.snackName = snackName;
@@ -30,7 +30,7 @@ public class Snack {
     public int getSnackQuantity(){
         return snackQuantity;
     }
-    public int getSnackCost(){
+    public double getSnackCost(){
         return snackCost;
     }
     public int getVMId(){
@@ -48,11 +48,22 @@ public class Snack {
     public void setSnackQuantity(int snackQuantity){
         this.snackQuantity = snackQuantity;
     }
-    public void setSnackCost (int snackCost){
+    public void setSnackCost (double snackCost){
         this.snackCost = snackCost;
     }
     public void setVMId(int vMId){
         this.vMId = vMId;
     } // last Setter
+
+    //Other Methods
+    public void addQuantity(int addQuantity){
+        this.snackQuantity += addQuantity;
+    }
+    public void buyASnack(int quantity){
+        this.snackQuantity -= quantity;
+    }
+    public double getTotalCost(int quantity){
+       return  quantity * this.snackCost;
+    }
 
 } // closes Snack class

@@ -15,7 +15,7 @@ public class VendingMachine {
 
 
     //Getters 
-    public int getVMId(){
+    public int getVMId(){ //food.getVMId
         return vMId;
     }
     public String getVName(){

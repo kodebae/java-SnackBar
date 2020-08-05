@@ -35,4 +35,14 @@ public class Customer {
             this.pocketChange = pocketChange; 
         }// last Settter
 
+        //Other Methods
+        public void addPocketChange(double addPocketChange){
+            this.pocketChange += addPocketChange;
+            //this.pocketChange = this.pocketChange + addPocketChange;
+        }
+        public void buySnacks(int quantity, Snack snack){
+            snack.buyASnack(quantity);
+           this.pocketChange -= snack.getTotalCost(quantity);
+        }
+
 } // closes Customer class
